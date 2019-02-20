@@ -663,8 +663,8 @@ int v24Gets ( v24_port_t *port, char* Buffer, size_t BuffSize )
 	 * chunks'. So all we have to is to check if the buffer is full or the
 	 * terminating char is read.
 	 */
-	if ( Buffer[total-1]==EZV24_END_OF_STRING )
-	    break;
+	/*if ( Buffer[total-1]==EZV24_END_OF_STRING )
+	    break;*/
 	if ( total==BuffSize )
 	    break;
     }
